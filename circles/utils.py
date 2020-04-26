@@ -26,6 +26,6 @@ def create_circle(circle_name, added_by_user):
     circle_user = CircleUser.objects.create(
         circle=circle,
         user=added_by_user,
-        can_manage=True
+        is_manager=True
     )
     return circle, circle_user

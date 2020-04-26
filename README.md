@@ -14,9 +14,23 @@ MIT
 
 # Install
 
-NOTE: Not yet released to Pypi!
-
 `pip install django-circles`
+
+Add it to your settings installed apps:
+
+```
+INSTALLED_APPS = [
+    ...
+    'circles',
+    ...
+]
+```
+
+
+You need to migrate after installing.
+Migrations are not included.
+
+`python manage.py migrate`
 
 # Requirements
 
